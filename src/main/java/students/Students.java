@@ -63,5 +63,19 @@ public class Students {
         System.out.println("******* Using foreach() method ********");
         studentsList.forEach(str -> System.out.println(str));
 
+        Students students = new Students();
+
+        // Mark in Physics W 40/50 MCQ 45/50
+
+        int w = 40;
+        int mcq = 45;
+        System.out.println(students.getStudentsInfo().add(40, 45));
+
+    }
+
+    public Calculator getStudentsInfo(){
+        System.out.println("Get Students info");
+        Calculator calculator = new Calculator();
+        return calculator;
     }
 }
